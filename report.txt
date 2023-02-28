@@ -1,0 +1,102 @@
+**********************  INFORME D'ANÀLISIS DE DADES DE CLIENTS  **********************
+
+Informe d'anàlisis descriptiu de les dades obtingudes sobre els clients registrats i la seva acceptació de les diferents campanyes promocionals.
+
+
+			********************************************
+			* APARTAT 1: ANÀLISIS GENERAL DE VARIABLES *
+			********************************************
+
+
+
+ DESCRIPCIÓ GLOBAL DADES NUMÈRIQUES
++----------------------+------------+------------+------------+------------+------------+
+| Column               | Count      | Mean       | Std Dev    | Min        | Max        |
++----------------------+------------+------------+------------+------------+------------+
+| Age                  | 2217       | 54.155     | 12.035     | 27         | 130        |
+| Years_As_Customer    | 2217       | 9.967      | 0.717      | 9          | 11         |
+| Total_Spent          | 2217       | 606.802    | 602.766    | 5          | 2525       |
+| Total_Cmp_Accepted   | 2217       | 0.448      | 0.892      | 0          | 5          |
+| Recency              | 2217       | 48.991     | 28.954     | 0          | 99         |
++----------------------+------------+------------+------------+------------+------------+
+Taula 1: descripció genèrica de les dades numèriques més rellevants.
+
+
+
+ DESCRIPCIÓ GLOBAL DADES CATEGÓRIQUES
++----------------------+------------+------------+------------+------------+
+| Column               | Count      | Unique     | Top        | Freq       |
++----------------------+------------+------------+------------+------------+
+| Education            | 2217       | 5          | Graduation | 1116       |
+| Marital_Status       | 2217       | 8          | Married    | 857        |
++----------------------+------------+------------+------------+------------+
+Taula 2: descripció genèrica de les dades categòriques més rellevants.
+
+
+
+ DESCRIPCIÓ GLOBAL DADES BINÀRIES
++----------------------+------------+------------+
+| Column               | Yes        | No         |
++----------------------+------------+------------+
+| Has_Children         | 71.43%     | 28.56%     |
+| Complain             | .94%       | 99.05%     |
+| Response             | 15.02%     | 84.97%     |
++----------------------+------------+------------+
+Taula 3: descripció genèrica de les dades de tipus binari.
+
+
+
+			**************************************************
+			* APARTAT 2: ANÀLISIS DE CLIENTS PER RANG D'EDAT *
+			**************************************************
+
+
+
+PERCENTATGES DE CLIENTS PER RANGS D'EDAT
+
+50-59  |  28.91%  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+40-49  |  26.34%  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+60-69  |  21.06%  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+70+    |  12.04%  ▇▇▇▇▇▇▇▇▇▇▇▇
+30-39  |  11.14%  ▇▇▇▇▇▇▇▇▇▇▇
+18-29  |  .45%    
+
+Gràfic 1: Percentatge dels diferents rangs d'edat entre els clients registrats.
+
+
+
+ CÀLCUL DE MITJANES PER RANG D'EDAT
++-----------------+-----------------+-------------------+-----------------+
+| Age_Range       | Avg Total_Spent | Avg Cmp_Accepted  | Avg Recency     |
++-----------------+-----------------+-------------------+-----------------+
+| 18-29           | 831.600         | 1.100             | 45.800          |
+| 30-39           | 562.267         | 0.530             | 49.243          |
+| 40-49           | 520.986         | 0.411             | 48.509          |
+| 50-59           | 576.101         | 0.421             | 49.226          |
+| 60-69           | 696.647         | 0.450             | 48.769          |
+| 70+             | 746.112         | 0.494             | 49.936          |
++-----------------+-----------------+-------------------+-----------------+
+Taula 4: Mitjana de les variables numèriques més rellevants, agrupades per rang d'edat.
+
+
+
+
+			*************************************************
+			* APARTAT 3: ANÀLISIS DE LES DARRERES CAMPANYES *
+			*************************************************
+
+
+
+GRÀFIC DE RESPOSTES A LES CAMPANYES
+
+AcceptedCmp4|  164  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+AcceptedCmp3|  163  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+AcceptedCmp5|  162  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+AcceptedCmp1|  142  ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+AcceptedCmp2|  30   ▇▇▇▇▇▇▇
+
+Gràfic 2: Comparació de les diferents campanyes publicitàries pel total de clients que hi han donat resposta.
+
+
+**************************************************************************************
+
